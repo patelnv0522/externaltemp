@@ -27,7 +27,7 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>Welcome to [TEAM NAME'S] application</h1>"));
+        chai.assert.isTrue(res.text.includes("Welcome to The Team Formerly Known As Group 3 application"));
         return done();
       });
 
@@ -93,7 +93,3 @@ describe('POST /event', function () {
 
   });
 });
-
-
-
-
